@@ -1,0 +1,45 @@
+# depslib dependency file v1.0
+1555916466 source:c:\users\admin\documents\programming\c++\tbt\main.cpp
+	<iostream>
+	<string>
+	<vector>
+	<stdlib.h>
+	<math.h>
+	"curses/curses.h"
+	"Global.h"
+	"Character.h"
+	"Drawer.h"
+
+1220933418 c:\users\admin\documents\programming\c++\tbt\curses\curses.h
+	<stdarg.h>
+	<stddef.h>
+	<stdio.h>
+	<wchar.h>
+
+1555915933 source:c:\users\admin\documents\programming\c++\tbt\global.cpp
+	"Global.h"
+	<vector>
+	"Character.h"
+
+1555915933 c:\users\admin\documents\programming\c++\tbt\global.h
+	<vector>
+	"Character.h"
+
+1555913727 c:\users\admin\documents\programming\c++\tbt\character.h
+	<string>
+
+1555916792 source:c:\users\admin\documents\programming\c++\tbt\character.cpp
+	"Character.h"
+	<string>
+	<vector>
+	<stdlib.h>
+	<iostream>
+	"Global.h"
+
+1555916407 c:\users\admin\documents\programming\c++\tbt\drawer.h
+
+1555916901 source:c:\users\admin\documents\programming\c++\tbt\drawer.cpp
+	"Drawer.h"
+	"Global.h"
+	"curses/curses.h"
+
