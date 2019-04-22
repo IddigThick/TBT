@@ -4,6 +4,8 @@
 #include <stdlib.h>//rand()
 #include <iostream>//cin, cout FOR DEBUG, PLEASE REMOVE
 #include "Global.h"
+#include <time.h>
+
 //Character player = *list.begin();
 
 using namespace std;

@@ -1,10 +1,11 @@
 # depslib dependency file v1.0
-1555916466 source:c:\users\admin\documents\programming\c++\tbt\main.cpp
+1555956858 source:c:\users\admin\documents\programming\c++\tbt\main.cpp
 	<iostream>
 	<string>
 	<vector>
 	<stdlib.h>
 	<math.h>
+	<time.h>
 	"curses/curses.h"
 	"Global.h"
 	"Character.h"
@@ -16,30 +17,35 @@
 	<stdio.h>
 	<wchar.h>
 
-1555915933 source:c:\users\admin\documents\programming\c++\tbt\global.cpp
+1555923747 source:c:\users\admin\documents\programming\c++\tbt\global.cpp
 	"Global.h"
 	<vector>
 	"Character.h"
 
-1555915933 c:\users\admin\documents\programming\c++\tbt\global.h
+1555923766 c:\users\admin\documents\programming\c++\tbt\global.h
 	<vector>
 	"Character.h"
 
-1555913727 c:\users\admin\documents\programming\c++\tbt\character.h
+1555918576 c:\users\admin\documents\programming\c++\tbt\character.h
 	<string>
 
-1555916792 source:c:\users\admin\documents\programming\c++\tbt\character.cpp
+1555956032 source:c:\users\admin\documents\programming\c++\tbt\character.cpp
 	"Character.h"
 	<string>
 	<vector>
 	<stdlib.h>
 	<iostream>
 	"Global.h"
+	<time.h>
 
-1555916407 c:\users\admin\documents\programming\c++\tbt\drawer.h
+1555926174 c:\users\admin\documents\programming\c++\tbt\drawer.h
+	<string>
+	"Global.h"
 
-1555916901 source:c:\users\admin\documents\programming\c++\tbt\drawer.cpp
+1555956865 source:c:\users\admin\documents\programming\c++\tbt\drawer.cpp
 	"Drawer.h"
 	"Global.h"
 	"curses/curses.h"
+	<string>
+	<math.h>
 

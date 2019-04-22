@@ -8,4 +8,6 @@ extern unsigned short max_age;
 extern unsigned short min_age;
 extern unsigned short max_height;//remove?
 extern unsigned short min_height;//remove?
+extern const unsigned short print_lines;
+extern const int print_length;
 extern Character player;

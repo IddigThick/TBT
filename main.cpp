@@ -4,6 +4,7 @@
 #include <vector>//vectors
 #include <stdlib.h>//rand()
 #include <math.h>//round()
+#include <time.h>//proper rand based upon clock
 //external libraries
 #include "curses/curses.h"//formatted printing to console
 //user libraries
@@ -13,79 +14,42 @@
 
 using namespace std;
 
-
-/*
-class Player_setup {
-    public:
-    private:
-        unsigned short age;
-        unsigned short height;
-        unsigned short weight;
-
-        void
-};
-*/
-
-
-
-
 int main() {
-    string Name;
-    int Age;
-    float Height;
+    //generate seed for rand
+    time_t t;
+    srand((unsigned) time(&t));
+
+    //DEBUG - generate random characters
     Character *f1;
     for (int n=0; n<3; n++) {
-        /*
-        cout <<"Enter name :"<<endl;
-        getline(cin, Name);
-        cout <<"Enter age :"<<endl;
-        cin >> Age;
-        cout <<"Enter height :"<<endl;
-        cin>> Height;
-        */
         f1 = new Character("random");
-        /*
-        f1->setName(Name);
-        f1->setAge(Age);
-        f1->setHeight(Height);
-        */
         characters.push_back(*f1);
-        //cin.get(); //clear buffer
     }
-    //Drawer draw;
-    Character player = *characters.begin();
-    player.printCharacterInfo();
-    //f1 = new Character;
-    //characters.push_back(*f1);
-    //cin.get();
-    // Now setup an iterator loop through the vector
+    //DEBUG - test player link to characters[0]
+    Character *player = &characters[0];
+    player->set_name("Player");
+    //player.set_name("Player");
+    player->printCharacterInfo();
 
-    //DEBUG - generate and display characters of random Characters
+    //DEBUG - display info of random Characters generated
     vector<Character>::iterator it;
     for ( it = characters.begin(); it != characters.end(); ++it ) {
         it->printCharacterInfo();
     }
     cin.get();
 
-    player.set_name("Player");
-
-    //end Character testing///////////////////////////////////////////////////////////////////
-
-    //screen drawing
-    char users_name[ 100 ];
+    //DEBUG - test draw.screen_print function
     Drawer draw;
-    //end screen drawing ////////////////////////////////////////////////////////////////////
-
-
-    //printw( "\n\n\nPress ENTER to quit." );
-
-    getnstr( users_name, sizeof( users_name ) - 1 );
-
-    //cout << "END PROGRAM 1";
-    //exit (EXIT_FAILURE);
-    //cout << "END PROGRAM";
-
-
+    draw.screen_print("Bellow are 2 draw.screen_print(), lorem and At vero:");
+    draw.screen_print("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+    draw.screen_print("At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.");
+    draw.screen_print("This is the last line");//last test line before scroll
+    cin.get();
+    draw.screen_print("This is a new line of text, which scrolls the above text by 2 lines");
+    cin.get();
+    draw.screen_print(" ");//equivalent to newline
+    draw.screen_print("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+    cin.get();
 
     return 0;
 }
