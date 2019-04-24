@@ -74,6 +74,7 @@ unsigned short Character::get_max_experience() {
 unsigned short Character::get_experience() {
     return status_data[9];
 }
+
 void Character::printCharacterInfo() {
     cout << "Name       : " << name << endl;
     cout << "Age        : " << age << endl;
@@ -91,10 +92,6 @@ void Character::generate_full_random() {
 }
 
 //implementations
-
-//Character constructors allow you to create a new Character completely randomly, or give certain information and leave the rest to generation. you can create a Character with only looks, stats, or using a predefined template.
-//note max stats are calculated based upon passed
-//default constructor
 Character::Character() {
     name = "DEFAULT";
     age = 50;

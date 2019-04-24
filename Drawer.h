@@ -2,6 +2,9 @@
 #define DRAWER_H
 #include <string>
 #include "Global.h"
+#include "Weapon.h"
+#include "Item.h"
+
 
 using namespace std;
 
@@ -10,8 +13,9 @@ class Drawer {
     Drawer();
     ~Drawer() {}
     void screen_print(string input);
-  private:
+    void inspect_weapon_print(Weapon*);
     void update_print();
+  private:
     void update_buffer(string input, unsigned short input_lines);
     void draw_status_bar(int y, int x,int minimum, int maximum);
     void player_status();

@@ -37,8 +37,14 @@
 		<Unit filename="Character.h" />
 		<Unit filename="Drawer.cpp" />
 		<Unit filename="Drawer.h" />
+		<Unit filename="Equipable.cpp" />
+		<Unit filename="Equipable.h" />
 		<Unit filename="Global.cpp" />
 		<Unit filename="Global.h" />
+		<Unit filename="Item.cpp" />
+		<Unit filename="Item.h" />
+		<Unit filename="Weapon.cpp" />
+		<Unit filename="Weapon.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />

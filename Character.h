@@ -48,6 +48,7 @@ class Character {
     unsigned short weight;
 
     unsigned short status_data [10];//max_health,health,max_stamina,stamina,max_mana,mana,max_lust,lust,max_experience,experience
+    unsigned short inventory [36];//collection of item IDs, where the item IDs are simply the index of items [] (similar to characters[]);36 chosen for 2
     unsigned short level;
     unsigned short corruption;
     unsigned short gold;
