@@ -1,0 +1,9 @@
+weapon_id=example_weapon
+name=example weapon
+weight=3
+damage=6
+value=140
+one_handed=1
+class=fighter,rogue
+
+weapon_id=end

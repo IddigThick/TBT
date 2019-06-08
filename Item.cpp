@@ -2,8 +2,6 @@
 #include "Global.h"
 #include <string>//strings
 
-using namespace std;
-
 //functions to set variables
 void Item::set_name(string passed_name) {
     name = passed_name;
@@ -23,7 +21,7 @@ string Item::get_item_type() {
     return item_type;
 }
 
-//implementations
+//should be impossible to be called
 Item::Item() {
     name = "DEFAULT ITEM";
     value = 100;

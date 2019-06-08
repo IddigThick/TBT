@@ -1,18 +1,7 @@
 # depslib dependency file v1.0
-1556084286 source:c:\users\admin\documents\programming\c++\tbt\main.cpp
-	<iostream>
-	<string>
-	<vector>
-	<stdlib.h>
-	<math.h>
-	<time.h>
-	"curses/curses.h"
+1559844964 source:c:\users\admin\documents\programming\c++\tbt\main.cpp
 	"Global.h"
 	"Character.h"
-	"Drawer.h"
-	"Item.h"
-	"Equipable.h"
-	"Weapon.h"
 
 1220933418 c:\users\admin\documents\programming\c++\tbt\curses\curses.h
 	<stdarg.h>
@@ -20,68 +9,182 @@
 	<stdio.h>
 	<wchar.h>
 
-1555923747 source:c:\users\admin\documents\programming\c++\tbt\global.cpp
+1559845069 source:c:\users\admin\documents\programming\c++\tbt\global.cpp
 	"Global.h"
+
+1559790010 c:\users\admin\documents\programming\c++\tbt\global.h
 	<vector>
 	"Character.h"
+	"Mapper.h"
+	"Drawer.h"
+	"SceneController.h"
+	"Menu.h"
+	"FileInterpreter.h"
+	"ModuleHandler.h"
 
-1556065714 c:\users\admin\documents\programming\c++\tbt\global.h
-	<vector>
-	"Character.h"
-	"Item.h"
-
-1556084286 c:\users\admin\documents\programming\c++\tbt\character.h
+1559779991 c:\users\admin\documents\programming\c++\tbt\character.h
 	<string>
-
-1556084286 source:c:\users\admin\documents\programming\c++\tbt\character.cpp
-	"Character.h"
+	<vector>
+	<memory>
+	"Structures.h"
 	<string>
 	<vector>
 	<stdlib.h>
-	<iostream>
+	<array>
+	<time.h>
+	"curses/curses.h"
+
+1559779285 source:c:\users\admin\documents\programming\c++\tbt\character.cpp
+	"Character.h"
 	"Global.h"
+
+1559773306 c:\users\admin\documents\programming\c++\tbt\drawer.h
+	<string>
+	<math.h>
+	"curses/curses.h"
+
+1559794438 source:c:\users\admin\documents\programming\c++\tbt\drawer.cpp
+	"Drawer.h"
+	"Global.h"
+
+1559341108 c:\users\admin\documents\programming\c++\tbt\item.h
+	<string>
+
+1559341077 source:c:\users\admin\documents\programming\c++\tbt\item.cpp
+	"Item.h"
+	"Global.h"
+	<string>
+
+1559341087 source:c:\users\admin\documents\programming\c++\tbt\equipable.cpp
+	"Equipable.h"
+	"Global.h"
+	"Item.h"
+	<string>
+
+1559341082 c:\users\admin\documents\programming\c++\tbt\equipable.h
+	"Item.h"
+	<string>
+
+1559341053 source:c:\users\admin\documents\programming\c++\tbt\weapon.cpp
+	"Weapon.h"
+	"Global.h"
+	"Equipable.h"
+	"Drawer.h"
+	<string.h>
+
+1557122345 c:\users\admin\documents\programming\c++\tbt\weapon.h
+	"Equipable.h"
+	<string>
+
+1556930328 source:c:\users\admin\documents\programming\c++\tbt\tile.cpp
+	"Tile.h"
+	<string>
+
+1559776486 c:\users\admin\documents\programming\c++\tbt\tile.h
+	<vector>
+	<memory>
+
+1559333573 source:c:\users\admin\documents\programming\c++\tbt\map.cpp
+	"Map.h"
+	"Tile.h"
 	<time.h>
 
-1556084286 c:\users\admin\documents\programming\c++\tbt\drawer.h
-	<string>
-	"Global.h"
-	"Weapon.h"
-	"Item.h"
+1556144607 c:\users\admin\documents\programming\c++\tbt\map.h
+	"Tile.h"
 
-1556084286 source:c:\users\admin\documents\programming\c++\tbt\drawer.cpp
-	"Drawer.h"
+1556142245 source:c:\users\admin\documents\programming\c++\tbt\maper.cpp
+	"Maper.h"
+
+1556142170 c:\users\admin\documents\programming\c++\tbt\maper.h
+	"Tile.h"
+
+1559776431 source:c:\users\admin\documents\programming\c++\tbt\mapper.cpp
+	"Mapper.h"
+	"curses/curses.h"
+	"Global.h"
+	"Character.h"
+	<memory>
+
+1559776496 c:\users\admin\documents\programming\c++\tbt\mapper.h
+	"Tile.h"
+	"Map.h"
+	<vector>
+
+1559771498 c:\users\admin\documents\programming\c++\tbt\scenecontroller.h
+	"Mapper.h"
+
+1559876804 source:c:\users\admin\documents\programming\c++\tbt\scenecontroller.cpp
+	"SceneController.h"
+	<string>
 	"Global.h"
 	"curses/curses.h"
-	<string>
-	<string.h>
-	<math.h>
+	"Combat.h"
+	"time.h"
+	"Character.h"
+	<vector>
 
-1556077898 c:\users\admin\documents\programming\c++\tbt\item.h
-	<string>
-
-1556077885 source:c:\users\admin\documents\programming\c++\tbt\item.cpp
-	"Item.h"
+1559880375 source:c:\users\admin\documents\programming\c++\tbt\combat.cpp
+	"Combat.h"
 	"Global.h"
-	<string>
-
-1556077971 source:c:\users\admin\documents\programming\c++\tbt\equipable.cpp
-	"Equipable.h"
-	"Global.h"
-	"Item.h"
-	<string>
-
-1556077971 c:\users\admin\documents\programming\c++\tbt\equipable.h
-	"Item.h"
-	<string>
-
-1556084286 source:c:\users\admin\documents\programming\c++\tbt\weapon.cpp
-	"Weapon.h"
-	"Global.h"
-	"Equipable.h"
+	"curses/curses.h"
 	"Drawer.h"
-	<string.h>
+	"SceneController.h"
 
-1556084286 c:\users\admin\documents\programming\c++\tbt\weapon.h
-	"Equipable.h"
+1557215935 c:\users\admin\documents\programming\c++\tbt\combat.h
+	"Character.h"
+	"Global.h"
+
+1557034234 source:c:\users\admin\documents\programming\c++\tbt\test.cpp
+	"Test.h"
+
+1557035743 c:\users\admin\documents\programming\c++\tbt\test.h
+	"Item.h"
 	<string>
+	<vector>
+	<memory>
+
+1557555303 source:c:\users\admin\documents\programming\c++\tbt\armor.cpp
+	"Armor.h"
+	<cmath>
+
+1557553662 c:\users\admin\documents\programming\c++\tbt\armor.h
+	"Equipable.h"
+
+1559877389 source:c:\users\admin\documents\programming\c++\tbt\menu.cpp
+	"Menu.h"
+	"Global.h"
+	"curses/curses.h"
+
+1559544986 c:\users\admin\documents\programming\c++\tbt\menu.h
+	<string>
+
+1559763062 c:\users\admin\documents\programming\c++\tbt\fileinterpreter.h
+	<vector>
+	<string>
+
+1559795993 source:c:\users\admin\documents\programming\c++\tbt\fileinterpreter.cpp
+	"FileInterpreter.h"
+	"Global.h"
+	<windows.h>
+	<fstream>
+	<iostream>
+
+1559794116 c:\users\admin\documents\programming\c++\tbt\modulehandler.h
+	<vector>
+	<string>
+	"Structures.h"
+
+1559797472 source:c:\users\admin\documents\programming\c++\tbt\modulehandler.cpp
+	"ModuleHandler.h"
+	<fstream>
+	<iostream>
+	<array>
+	"Global.h"
+
+1559787705 c:\users\admin\documents\programming\c++\tbt\structures.h
+	<string>
+	<vector>
+
+1559781189 source:c:\users\admin\documents\programming\c++\tbt\structures.cpp
+	"Structures.h"
 
